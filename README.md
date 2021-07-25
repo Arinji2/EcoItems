@@ -7,7 +7,7 @@
 <h4 align="center">Source code for EcoItems, a premium spigot plugin.</h4>
 
 <p align="center">
-    <a href="https://www.spigotmc.org/resources/ecoitems.79573/">
+    <a href="https://www.spigotmc.org/resources/ecoitems.94630/">
         <img alt="spigot" src="https://img.shields.io/badge/spigot-ecoitems-yellow?style=for-the-badge"/>
     </a>
     <a href="https://bstats.org/plugin/bukkit/EcoItems" alt="bstats servers">
