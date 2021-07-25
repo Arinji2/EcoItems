@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": "example",
+      "material": "end_portal_frame",
+      "displayName": "&eTest Item",
+      "lore": [
+        "&fExample lore line"
+      ],
+      "unbreakable": false,
+      "flags": [
+
+      ],
+      "customModelData": -1,
+      "enchants": [
+        {
+          "id": "sharpness",
+          "level": 5
+        },
+        {
+          "id": "fire_aspect",
+          "level": 2
+        },
+        {
+          "id": "unbreaking",
+          "level": 3
+        }
+      ],
+      "craftable": false,
+      "recipe": [
+        "yellow_wool",
+        "yellow_wool",
+        "yellow_wool",
+        "yellow_wool",
+        "netherite_block",
+        "yellow_wool",
+        "yellow_wool",
+        "yellow_wool",
+        "yellow_wool"
+      ]
+    }
+  ]
+}
