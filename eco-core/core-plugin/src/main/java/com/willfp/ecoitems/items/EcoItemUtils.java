@@ -24,7 +24,11 @@ public class EcoItemUtils {
      * @return The item ID, or null if no item is found.
      */
     @Nullable
-    public String getRecipeItemID(@NotNull final ItemStack itemStack) {
+    public String getRecipeItemID(@Nullable final ItemStack itemStack) {
+        if (itemStack == null) {
+            return null;
+        }
+
         ItemMeta meta = itemStack.getItemMeta();
 
         if (meta == null) {
