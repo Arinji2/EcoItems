@@ -65,9 +65,11 @@ public class EcoItems {
     }
 
     private static CustomItem buildCustomItem(@NotNull final JSONConfig config) {
-        Material material = Material.getMaterial(config.getString("material").toUpperCase());
         String id = config.getString("id");
-
+        Material material = Material.getMaterial(config.getString("material").toUpperCase());
+        if (material == null) {
+            PLUGIN.getLogger().warning("Invalid material specified in " + id);
+        }
         assert material != null;
 
         ItemBuilder builder = new ItemStackBuilder(material);
