@@ -25,7 +25,7 @@ public class AntiUseListener extends PluginDependent<EcoPlugin> implements Liste
      */
     @EventHandler
     public void onBlockPlace(@NotNull final BlockPlaceEvent event) {
-        if (EcoItemUtils.getRecipeItem(event.getItemInHand()) != null) {
+        if (EcoItemUtils.getItem(event.getItemInHand()) != null) {
             event.setCancelled(true);
             event.setBuild(false);
         }

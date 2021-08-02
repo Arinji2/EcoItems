@@ -24,7 +24,7 @@ public class EcoItemUtils {
      * @return The item ID, or null if no item is found.
      */
     @Nullable
-    public String getRecipeItemID(@Nullable final ItemStack itemStack) {
+    public String getItemID(@Nullable final ItemStack itemStack) {
         if (itemStack == null) {
             return null;
         }
@@ -48,14 +48,14 @@ public class EcoItemUtils {
      * @return The item, or null if no item is found.
      */
     @Nullable
-    public CustomItem getRecipeItem(@NotNull final ItemStack itemStack) {
+    public CustomItem getItem(@NotNull final ItemStack itemStack) {
         ItemMeta meta = itemStack.getItemMeta();
 
         if (meta == null) {
             return null;
         }
 
-        return getRecipeItem(meta);
+        return getItem(meta);
     }
 
     /**
@@ -65,7 +65,7 @@ public class EcoItemUtils {
      * @return The item, or null if no item is found.
      */
     @Nullable
-    public CustomItem getRecipeItem(@NotNull final ItemMeta meta) {
+    public CustomItem getItem(@NotNull final ItemMeta meta) {
         PersistentDataContainer container = meta.getPersistentDataContainer();
         String itemID = container.get(PLUGIN.getNamespacedKeyFactory().create("recipe_item"), PersistentDataType.STRING);
 

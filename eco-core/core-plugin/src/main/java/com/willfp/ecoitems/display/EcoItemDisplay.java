@@ -31,7 +31,7 @@ public class EcoItemDisplay extends DisplayModule {
             return;
         }
 
-        CustomItem item = EcoItemUtils.getRecipeItem(meta);
+        CustomItem item = EcoItemUtils.getItem(meta);
 
         if (item == null) {
             return;

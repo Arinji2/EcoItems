@@ -37,7 +37,8 @@
         "yellow_wool",
         "yellow_wool",
         "yellow_wool"
-      ]
+      ],
+      "recipeGiveAmount": 1
     }
   ]
 }
