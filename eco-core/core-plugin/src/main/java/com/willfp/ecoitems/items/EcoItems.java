@@ -10,11 +10,13 @@ import com.willfp.eco.core.display.Display;
 import com.willfp.eco.core.items.CustomItem;
 import com.willfp.eco.core.items.builder.ItemBuilder;
 import com.willfp.eco.core.items.builder.ItemStackBuilder;
+import com.willfp.eco.core.items.builder.SkullBuilder;
 import com.willfp.eco.core.recipe.Recipes;
 import com.willfp.ecoitems.EcoItemsPlugin;
 import lombok.experimental.UtilityClass;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.block.Skull;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -72,7 +74,14 @@ public class EcoItems {
         }
         assert material != null;
 
-        ItemBuilder builder = new ItemStackBuilder(material);
+        ItemBuilder builder;
+
+        if (material == Material.PLAYER_HEAD) {
+            builder = new SkullBuilder()
+                    .setSkullTexture(config.getString("texture"));
+        } else {
+            builder = new ItemStackBuilder(material);
+        }
 
         builder.setDisplayName(config.getString("displayName"))
                 .addItemFlag(
