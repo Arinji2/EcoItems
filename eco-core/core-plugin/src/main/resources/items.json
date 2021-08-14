@@ -250,6 +250,38 @@
         "glass",
         "netherite_ingot"
       ]
+    },
+    {
+      "id": "boss_core",
+      "material": "egg",
+      "displayName": "<gradient:#1cefff>Boss Core</gradient:#c0c0aa>",
+      "lore": [
+        "&8Required to craft boss",
+        "&8spawn eggs"
+      ],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "ender_eye",
+        "diamond",
+        "ender_eye",
+        "diamond",
+        "nether_star",
+        "diamond",
+        "ender_eye",
+        "diamond",
+        "ender_eye"
+      ]
     }
   ]
 }
