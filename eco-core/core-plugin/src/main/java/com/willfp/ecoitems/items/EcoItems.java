@@ -113,7 +113,13 @@ public class EcoItems {
 
         ItemStack itemStack = builder.build();
 
-        CustomItem customItem = new CustomItem(PLUGIN.getNamespacedKeyFactory().create(id.toLowerCase()), test -> Objects.equals(id, EcoItemUtils.getItemID(test)), itemStack);
+        CustomItem customItem = new CustomItem(PLUGIN.getNamespacedKeyFactory().create(id.toLowerCase()), test -> {
+            if (EcoItemUtils.getItemID(test) == null) {
+                return false;
+            }
+
+            return Objects.equals(id, EcoItemUtils.getItemID(test));
+        }, itemStack);
         customItem.register();
 
         int amount = !config.has("recipeGiveAmount") ? 1 : config.getInt("recipeGiveAmount");

@@ -36,9 +36,12 @@ public class EcoItemUtils {
         }
 
         PersistentDataContainer container = meta.getPersistentDataContainer();
-        String itemID = container.get(PLUGIN.getNamespacedKeyFactory().create("recipe_item"), PersistentDataType.STRING);
 
-        return itemID;
+        if (!container.has(PLUGIN.getNamespacedKeyFactory().create("recipe_item"), PersistentDataType.STRING)) {
+            return null;
+        }
+
+        return container.get(PLUGIN.getNamespacedKeyFactory().create("recipe_item"), PersistentDataType.STRING);
     }
 
     /**
