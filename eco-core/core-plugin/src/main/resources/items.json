@@ -1,6 +1,180 @@
 {
   "items": [
     {
+      "id": "enchanted_ender_eye",
+      "material": "ender_eye",
+      "displayName": "&bEnchanted Ender Eye",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "ender_eye:4",
+        "air",
+        "ender_eye:4",
+        "ender_eye:4",
+        "ender_eye:4",
+        "air",
+        "ender_eye:4",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_ender_pearl",
+      "material": "ender_pearl",
+      "displayName": "&bEnchanted Ender Pearl",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "ender_pearl:4",
+        "air",
+        "ender_pearl:4",
+        "ender_pearl:4",
+        "ender_pearl:4",
+        "air",
+        "ender_pearl:4",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_emerald",
+      "material": "emerald",
+      "displayName": "&bEnchanted Emerald",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "emerald:32",
+        "air",
+        "emerald:32",
+        "emerald:32",
+        "emerald:32",
+        "air",
+        "emerald:32",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_iron_ingot",
+      "material": "iron_ingot",
+      "displayName": "&bEnchanted Iron Ingot",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "iron_ingot:32",
+        "air",
+        "iron_ingot:32",
+        "iron_ingot:32",
+        "iron_ingot:32",
+        "air",
+        "iron_ingot:32",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_diamond",
+      "material": "diamond",
+      "displayName": "&bEnchanted Diamond",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "diamond:32",
+        "air",
+        "diamond:32",
+        "diamond:32",
+        "diamond:32",
+        "air",
+        "diamond:32",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_cobblestone",
+      "material": "cobblestone",
+      "displayName": "&bEnchanted Cobblestone",
+      "lore": [],
+      "unbreakable": false,
+      "flags": [
+        "hide_enchants"
+      ],
+      "customModelData": -1.0,
+      "enchants": [
+        {
+          "id": "unbreaking",
+          "level": 1.0
+        }
+      ],
+      "craftable": true,
+      "recipe": [
+        "air",
+        "cobblestone:32",
+        "air",
+        "cobblestone:32",
+        "cobblestone:32",
+        "cobblestone:32",
+        "air",
+        "cobblestone:32",
+        "air"
+      ]
+    },
+    {
       "id": "talisman_shell_1",
       "material": "lime_stained_glass",
       "displayName": "<gradient:0575E6>Talisman Shell</gradient:1CB5E0>",
@@ -22,13 +196,13 @@
       "craftable": true,
       "recipe": [
         "copper_ingot",
-        "glass",
+        "air",
         "redstone",
-        "glass",
-        "end_stone_bricks",
-        "glass",
+        "air",
+        "ecoitems:enchanted_cobblestone",
+        "air",
         "redstone",
-        "glass",
+        "air",
         "copper_ingot"
       ]
     },
@@ -117,15 +291,15 @@
       ],
       "craftable": true,
       "recipe": [
-        "ender_eye",
-        "ender_eye",
-        "ender_eye",
-        "ender_eye",
+        "air",
+        "ecoitems:enchanted_ender_eye",
+        "air",
+        "ecoitems:enchanted_ender_eye",
         "ecoitems:talisman_shell_1",
-        "ender_eye",
-        "ender_eye",
-        "ender_eye",
-        "ender_eye"
+        "ecoitems:enchanted_ender_eye",
+        "air",
+        "ecoitems:enchanted_ender_eye",
+        "air"
       ]
     },
     {
@@ -150,13 +324,13 @@
       "craftable": true,
       "recipe": [
         "ecoitems:talisman_core_1",
-        "netherite_ingot",
+        "air",
         "ecoitems:talisman_core_1",
-        "netherite_ingot",
+        "air",
         "ecoitems:talisman_shell_2",
-        "netherite_ingot",
+        "air",
         "ecoitems:talisman_core_1",
-        "netherite_ingot",
+        "air",
         "ecoitems:talisman_core_1"
       ]
     },
@@ -182,13 +356,13 @@
       "craftable": true,
       "recipe": [
         "ecoitems:talisman_core_2",
-        "nether_star",
+        "air",
         "ecoitems:talisman_core_2",
-        "nether_star",
+        "air",
         "ecoitems:talisman_shell_3",
-        "nether_star",
+        "air",
         "ecoitems:talisman_core_2",
-        "nether_star",
+        "air",
         "ecoitems:talisman_core_2"
       ]
     },
@@ -213,7 +387,7 @@
       ],
       "craftable": true,
       "recipe": [
-        "netherite_ingot",
+        "ecoitems:enchanted_emerald",
         "copper_block",
         "amethyst_shard",
         "copper_block",
@@ -221,7 +395,7 @@
         "copper_block",
         "amethyst_shard",
         "copper_block",
-        "netherite_ingot"
+        "ecoitems:enchanted_emerald"
       ]
     },
     {
@@ -240,15 +414,15 @@
       "enchants": [],
       "craftable": true,
       "recipe": [
-        "iron_block",
-        "glass",
-        "iron_block",
-        "glass",
-        "polished_blackstone",
-        "glass",
-        "netherite_ingot",
-        "glass",
-        "netherite_ingot"
+        "ecoitems:enchanted_iron_ingot",
+        "air",
+        "ecoitems:enchanted_iron_ingot",
+        "air",
+        "ecoitems:enchanted_cobblestone",
+        "air",
+        "ecoitems:enchanted_iron_ingot",
+        "air",
+        "ecoitems:enchanted_iron_ingot"
       ]
     },
     {
@@ -272,15 +446,15 @@
       ],
       "craftable": true,
       "recipe": [
-        "ender_eye",
-        "diamond",
-        "ender_eye",
-        "diamond",
-        "nether_star",
-        "diamond",
-        "ender_eye",
-        "diamond",
-        "ender_eye"
+        "air",
+        "ecoitems:enchanted_ender_pearl",
+        "air",
+        "ecoitems:enchanted_ender_pearl",
+        "ecoitems:enchanted_diamond",
+        "ecoitems:enchanted_ender_pearl",
+        "air",
+        "ecoitems:enchanted_ender_pearl",
+        "air"
       ]
     }
   ]
