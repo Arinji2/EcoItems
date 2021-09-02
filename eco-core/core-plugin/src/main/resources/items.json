@@ -1,4 +1,36 @@
 {
+  "recipes": [
+    {
+      "id": "enchanted_emerald_stack",
+      "result": "ecoitems:enchanted_emerald 9",
+      "recipe": [
+        "air",
+        "emerald_block:32",
+        "air",
+        "emerald_block:32",
+        "emerald_block:32",
+        "emerald_block:32",
+        "air",
+        "emerald_block:32",
+        "air"
+      ]
+    },
+    {
+      "id": "enchanted_diamond_stack",
+      "result": "ecoitems:enchanted_diamond 9",
+      "recipe": [
+        "air",
+        "diamond_block:32",
+        "air",
+        "diamond_block:32",
+        "diamond_block:32",
+        "diamond_block:32",
+        "air",
+        "diamond_block:32",
+        "air"
+      ]
+    }
+  ],
   "items": [
     {
       "id": "enchanted_ender_eye",

@@ -8,6 +8,8 @@ import com.willfp.eco.core.config.interfaces.JSONConfig;
 import com.willfp.eco.core.config.updating.ConfigUpdater;
 import com.willfp.eco.core.display.Display;
 import com.willfp.eco.core.items.CustomItem;
+import com.willfp.eco.core.items.Items;
+import com.willfp.eco.core.items.TestableItem;
 import com.willfp.eco.core.items.builder.ItemBuilder;
 import com.willfp.eco.core.items.builder.ItemStackBuilder;
 import com.willfp.eco.core.items.builder.SkullBuilder;
@@ -61,9 +63,24 @@ public class EcoItems {
             removeItem(item);
         }
 
-        for (JSONConfig setConfig : plugin.getItemsJson().getSubsections("items")) {
-            addNewItem(buildCustomItem(setConfig));
+        for (JSONConfig config : plugin.getItemsJson().getSubsections("items")) {
+            addNewItem(buildCustomItem(config));
         }
+
+        for (JSONConfig config : plugin.getItemsJson().getSubsections("recipes")) {
+            addNewRecipeFromConfig(config);
+        }
+    }
+
+    private static void addNewRecipeFromConfig(@NotNull final JSONConfig config) {
+        String id = config.getString("id");
+        TestableItem result = Items.lookup(config.getString("result"));
+        Recipes.createAndRegisterRecipe(
+                PLUGIN,
+                id,
+                result.getItem(),
+                config.getStrings("recipe")
+        );
     }
 
     private static CustomItem buildCustomItem(@NotNull final JSONConfig config) {
