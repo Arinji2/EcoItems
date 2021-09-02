@@ -21,10 +21,7 @@
     </a>
 </p>
 
-[![Title](https://i.imgur.com/XFSPL6M.png)]()
-[![Features](https://i.imgur.com/dXKoMCL.png)]()
-[![Docs](https://i.imgur.com/liqcxwv.png)](https://discord.gg/ZcwpSsE/)
-[![Compatibility](https://i.imgur.com/6jm7fVS.png)]()
+[![Docs](https://i.imgur.com/xqXLRYf.png)](https://discord.gg/ZcwpSsE/)
 
 ## License
 *Click here to read [the entire license](https://github.com/Auxilor/EcoItems/blob/master/LICENSE.md).*
