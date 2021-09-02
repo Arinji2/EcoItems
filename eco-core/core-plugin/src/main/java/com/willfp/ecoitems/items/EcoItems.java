@@ -75,10 +75,12 @@ public class EcoItems {
     private static void addNewRecipeFromConfig(@NotNull final JSONConfig config) {
         String id = config.getString("id");
         TestableItem result = Items.lookup(config.getString("result"));
+        ItemStack item = result.getItem();
+        item.setAmount(config.getInt("recipeGiveAmount"));
         Recipes.createAndRegisterRecipe(
                 PLUGIN,
                 id,
-                result.getItem(),
+                item,
                 config.getStrings("recipe")
         );
     }

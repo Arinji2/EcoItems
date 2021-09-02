@@ -2,7 +2,8 @@
   "recipes": [
     {
       "id": "enchanted_emerald_stack",
-      "result": "ecoitems:enchanted_emerald 9",
+      "result": "ecoitems:enchanted_emerald",
+      "recipeGiveAmount": 9,
       "recipe": [
         "air",
         "emerald_block:32",
@@ -17,7 +18,8 @@
     },
     {
       "id": "enchanted_diamond_stack",
-      "result": "ecoitems:enchanted_diamond 9",
+      "result": "ecoitems:enchanted_diamond",
+      "recipeGiveAmount": 9,
       "recipe": [
         "air",
         "diamond_block:32",
